@@ -1,0 +1,64 @@
+Learning Databases
+
+What is a database?
+
+A database is nothing but the collection/storage of data in the form of tables.
+
+What is table?
+
+A table is the way of storing the data in rows and columns.
+There are majorly 2 types of databases.
+
+Relational Databases
+Non-Relational Databases
+
+Relational Databases: It is the type of database which stores the data in the form of tables( rows and columns ). And there will be relationship between the tables. So they are called
+Relational databases.
+
+                                        Examples: MySQL, Oracle Database, Microsoft SQL Server, Postgres SQL, Maria DB, SQLLite
+
+Non Relational Databases: It is the type of database which dont store the data in the form of tables. It stores in different formats like Key-Value pair , Document etc. And there will be  
+ no relationship between the tables.
+
+                                             Examples: Hbase, MongoDB, Cassandra
+
+The Programming language used to work with relational databases is SQL
+
+SQL: Structured Query Language
+
+Basically database is a software and SQL is language to interact with software
+
+Note: goorm ide is online ide to practice sql.
+
+GETTING STARTED WITH SQL:
+
+Note: All the keywords in SQL are in UPPER CASE and all the user defined variables are LOWER CASE
+
+Commands:
+
+1.  SHOW DATABASES ; -----> To get to know what are the databases present .
+
+2.       CREATE DATABASE <database_name>; —-> To create a database
+
+3.       DROP DATABASE <database_name>;  —-> To delete the database
+
+4.       USE <database_name>; ——> To use or enter into a particular database
+
+5.       SELECT database();  —-> To know in which database we are present.
+
+6.       CREATE TABLE <table_name> (
+            <column_name>  <data_type>,
+            <column_name>  <data_type>,
+            <column_name>  <data_type>
+
+    );
+
+    The above syntax creates a table in the database which are present in. We
+    Should be present inside an database.Otherwise we cannot create a table.
+
+7.  SHOW TABLES; —-> To know what are the tables present in the database.
+
+8.  DESC <table_name> ——> This will return the structure of the table like list  
+     Of columns, data_types of columns etc.
+
+9.  DROP TABLE <table_name> —-> To delete the table from the database.
