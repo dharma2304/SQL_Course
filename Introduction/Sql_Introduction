@@ -38,23 +38,47 @@ Commands:
 
 1.  SHOW DATABASES ; -----> To get to know what are the databases present .
 
-2.       CREATE DATABASE <database_name>; —-> To create a database
+2.  CREATE DATABASE <database_name>; —-> To create a database
 
-3.       DROP DATABASE <database_name>;  —-> To delete the database
+3.  DROP DATABASE <database_name>; —-> To delete the database
 
-4.       USE <database_name>; ——> To use or enter into a particular database
+4.  USE <database_name>; ——> To use or enter into a particular database
 
-5.       SELECT database();  —-> To know in which database we are present.
+5.  SELECT database(); —-> To know in which database we are present.
 
-6.       CREATE TABLE <table_name> (
-            <column_name>  <data_type>,
-            <column_name>  <data_type>,
-            <column_name>  <data_type>
+6.  CREATE TABLE <table_name> (
+    <column_name> <data_type>,
+    <column_name> <data_type>,
+    <column_name> <data_type>
 
     );
 
     The above syntax creates a table in the database which are present in. We
     Should be present inside an database.Otherwise we cannot create a table.
+
+                    OR
+          create table with constraints like NOT NULL --> we are imposing the constraints to columns
+
+          CREATE TABLE employee(
+            first_name VARCHAR(30) NOT NULL,
+            last_name VARCHAR(30) NOT NULL,
+            age INT NOT NULL,
+            salary INT NOT NULL,
+            location VARCHAR(30)
+          );
+
+          In the above case we are imposing the constraint NOT NULL which means the column values should not be null.
+
+                     OR
+        In this version we are using default values for columns. For example if we still want to get the value inserted when the user didnt gave the value, then we can use default values while creating the table.
+
+        CREATE TABLE employee(
+            first_name VARCHAR(30) NOT NULL,
+            last_name VARCHAR(30) NOT NULL,
+            age INT NOT NULL,
+            salary INT NOT NULL,
+            location VARCHAR(30) DEFAULT 'bangalore'
+          );
 
 7.  SHOW TABLES; —-> To know what are the tables present in the database.
 

@@ -1,0 +1,31 @@
+Topics Covered;
+
+1. CRUD Operations
+2. Simple Inserts
+3. Multiple Inserts
+4. Diff btwn NULL vs NOT NULL
+5. DEFUALT constraint
+
+There are majorly 4 opertations in the database.
+
+1.  CREATE --> Create/Insert the records in to the database
+2.  READ --> Select the statements into the database
+3.  UPDATE --> Update the records in the database
+4.  DELETE --> Drop the records from the database
+
+NULL: If we have a NULL for the column value in a row of a table , it means we dont know the value or we are not defined the value for that column of a row in a table.
+
+I. Create/Insert records into the database
+
+    Commands:
+
+    1.  INSERT INTO <table_name> VALUES('data', 'data'); ----> To insert the records into the database. The values we pass should match with the number of columns
+        and data type in the database
+
+                                        Recommended way to insert the records into the database
+
+        INSERT INTO <table_name>(col1,col2,col3) VALUES('data1','data2','data3');
+
+        Here you are specifying the column names that you are going to provide the values in the table. If you dont specify the column names you have to provide all the column values in the table.
+
+    2. INSERT INTO <table_name>(col1,col2,col3) VALUES('data1','data2','data3'),('data11', 'data12', 'data13'); -----> To insert the mutliple records at once.
