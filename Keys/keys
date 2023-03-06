@@ -1,0 +1,50 @@
+Topics covered:
+
+1. Primary key
+2. Auto Increment key
+3. Unique key
+4. Primary key vs Unique key
+
+1 . Primary Key: Primary key is useful to identify each unique record in the table of a database. For Example when we have records with same data we need to  
+ differentiate them. So with the help of primary key we can differentiate them.
+
+CREATE TABLE myself(
+name VARCHAR(20) NOT NULL,
+id INT NOT NULL PRIMARY KEY,
+age INT NOT NULL,
+sex VARCHAR(7) NOT NULL
+);
+
+In the above table we made the id column as primary key. Primary key column does not allow NULL values and Duplicate values.
+
+We can define the primary key in another way at the defining all the columns in the table creation.
+
+CREATE TABLE myself(
+name VARCHAR(20) NOT NULL,
+id INT ,
+age INT NOT NULL,
+sex VARCHAR(7) NOT NULL,
+PRIMARY KEY(id)
+);
+
+We can define the primary key on the combination of two columns which is called composite primary key. It means those two columns values should not be null and duplicated.
+
+CREATE TABLE myself(
+name VARCHAR(20),
+id INT ,
+age INT NOT NULL,
+sex VARCHAR(7) NOT NULL,
+PRIMARY KEY(id,name)
+);
+
+2 . Auto Increment key: For example if we have an integer column whose values should be unique in an order(1,2,3...), We need not to remember the previous value we have given. We just insert the value for one record and later SQL will auto assign the values for the column. For instance if we have inserted an value 1 for id column then auto increment value of the column id for the next record will be 2.
+
+CREATE TABLE myself(
+name VARCHAR(20) NOT NULL,
+id INT AUTO_INCREMENT ,
+age INT NOT NULL,
+sex VARCHAR(7) NOT NULL,
+PRIMARY KEY(id)
+);
+
+3. Unique Key: The prupose of unique key is to make sure the values in the column are unique not duplicate. We can have multiple unique keys(columns) in a table.
